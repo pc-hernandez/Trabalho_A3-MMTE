@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resproj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sidebar" id="sidebar">
+        <br>
+        <h1 style="font-size: 34px; color: #ffd700;">Pizzaria dos Guri</h1>
+    </div>
+
+    <header>
+        <div class="header-background">
+            <div class="header-left">
+                <a href="/htmls/homepage.html">
+                    <img src="/img/returnIcon.png" alt="Menu" class="header-return">
+                </a>
+            </div>
+            <div class="header-center"><img src="/img/logo.png" alt="Menu" class="header-logo"></div>
+            <div class="header-right" id="openMenu" class="header-right"><img src="/img/moreIcon.png" alt="Menu" class="header-more"></div>
+        </div>
+    </header>
+    <main>
+        <div class="avaliacao-popup">
+            <button class="avaliacao-popup-close">✖</button>
+            <form class="avaliacao-popup-form">
+                <input id="order" type="number" placeholder="Avaliação da comida" min="0" max="5" step="0.1">
+                <input id="reception" type="number" placeholder="Avaliação do atendimento" min="0" max="5" step="0.1">
+                <button class="avaliacao-popup-send" type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="main-background">
+            <div class="main-selector">
+                <div class="main-selector-title">
+                    <h2>Histórico de Pedidos</h2>
+                </div>
+                <div class="main-selector-select">
+                    <div class="selected">Todos os Pedidos</div>
+                    <div class="select"><a href="nutrition.html">Informações Nutricionais</a></div>
+                </div>
+                <div class="main-selector-pizza-order">
+                    <div class="pizza-order">
+                        <div>
+                            <span class="pizza-order-title">Pedido Concluido</span><br>
+                            <span class="pizza-order-subtitle">04/11/2025 às 12:42</span>
+                        </div>
+                        <div class="pizza-order-item">
+                            <img src="/img/calabreso.png">
+                            <span>Pizza de Calabresa 35cm...</span>
+                        </div>
+                        <div class="pizza-order-item">
+                            <img src="/img/margherita.png">
+                            <span>Pizza Marguerita 25cm...</span>
+                        </div>
+                        <span class="pizza-order-subtitle">mais 2 itens...</span>
+                        <div class="pizza-order-more-options">
+                            <span>Detalhes</span>
+                            <span>|</span>
+                            <span class="pizza-order-more-options-rate">Avaliar</span>
+                        </div>
+                        <span class="pizza-order-price">R$102,90</span>
+                    </div>
+                    <div class="pizza-order">
+                        <div>
+                            <span class="pizza-order-title">Pedido Concluido</span><br>
+                            <span class="pizza-order-subtitle">17/10/2025 às 21:07</span>
+                        </div>
+                        <div class="pizza-order-item">
+                            <img src="/img/calabreso.png">
+                            <span>Pizza de Calabresa 25cm...</span>
+                        </div>
+                        <div class="pizza-order-more-options">
+                            <span>Detalhes</span>
+                            <span>|</span>
+                            <span class="pizza-order-more-options-rate">Avaliar</span>
+                        </div>
+                        <span class="pizza-order-price">R$42,90</span>
+                    </div>
+                    <div class="pizza-order">
+                        <div>
+                            <span class="pizza-order-title">Pedido Concluido</span><br>
+                            <span class="pizza-order-subtitle">15/10/2025 às 19:25</span>
+                        </div>
+                        <div class="pizza-order-item">
+                            <img src="/img/margherita.png">
+                            <span>Pizza Marguerita 25cm...</span>
+                        </div>
+                        <div class="pizza-order-item">
+                            <img src="/img/margherita.png">
+                            <span>Pizza Marguerita 35cm...</span>
+                        </div>
+                        <span class="pizza-order-subtitle">mais 1 item...</span>
+                        <div class="pizza-order-more-options">
+                            <span>Detalhes</span>
+                            <span>|</span>
+                            <span class="pizza-order-more-options-rate">Avaliar</span>
+                        </div>
+                        <span class="pizza-order-price">R$99,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/scripts/avaliacao.js"></script>
+        <script src="../scripts/sidebar.js"></script>
+    </main>
+    <footer>
+        <div class="footer-background">
+            <a href="/index.html" class="footer-one">
+                <img src="/img/botao_home.png" alt="Home" class="footer-icons"></a></a>
+            
+            
+            <a href="menu.html" class="footer-two">
+                <img src="/img/botao_menu.png" alt="Menu" class="footer-icons"></a>
+            
+            
+            <a href="orders.html" class="footer-three">
+                <img src="/img/botao_pedido_now.png" alt="Pedidos" class="footer-icons"></a>
+            
+            <a href="profile.html" class="footer-four">
+                <img src="/img/botao_perfil.png" alt="Perfil" class="footer-icons"></a>
+        </div>
+    </footer>
+</body>
+</html>
